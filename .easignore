@@ -1,0 +1,64 @@
+# What EAS Build leaves out of the project tarball.
+#
+# EAS archives from the git root, which is this folder, so this file lives here
+# rather than in mobile/. It REPLACES every .gitignore once it exists, so the
+# entries from mobile/, api/ and admin/ are repeated below rather than inherited.
+
+# Agent skills. These are symlinks into .agents, and Windows cannot recreate a
+# symlink in the build's temp clone without elevated rights — the EPERM that
+# fails the upload. Nothing here is needed to build the app.
+.claude/
+.agents/
+skills-lock.json
+AGENTS.md
+
+# The other apps in the repo. Only mobile/ is built, and each app installs its
+# own dependencies, so shipping these would just make the upload slower.
+/api/
+/admin/
+/docs/
+/_designs/
+
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+web-build/
+.expo/
+.metro-health-check*
+*.tsbuildinfo
+
+# Generated native projects: EAS runs prebuild from the app config instead.
+/mobile/android/
+/mobile/ios/
+.kotlin/
+*.orig.*
+
+# Generated types
+expo-env.d.ts
+/mobile/src/uniwind-types.d.ts
+
+# Secrets and signing material. Values the build needs come from EAS
+# environment variables, never from a file in the tarball.
+.env
+.env.*
+*.local
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# Logs and editor noise
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+lerna-debug.*
+.vscode/
+.idea/
+.DS_Store

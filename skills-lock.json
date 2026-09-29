@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "computedHash": "80161e6836b3b40f4e83730a290deb40ac14d877d38c97ad5f6d71be37ce74c3"
+    },
+    "expo-native-builder": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/expo-native-builder/SKILL.md",
+      "computedHash": "adb8676028da7fc2c6544cdbb92122ed11c56a23a4fcfda1c9e7cd9af80d7d47"
+    },
+    "expo-uniwind-theme": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/expo-uniwind-theme/SKILL.md",
+      "computedHash": "67a445b2e8d27560a235d179fe00eed99167dadf17ec1c20a5cf3d702aecd768"
+    },
+    "mobile-ui-design": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/mobile-ui-design/SKILL.md",
+      "computedHash": "d1c7c06aff7084dd7095be1cb3c4d7e8bd408d723050d7d4bbcfed27e2e25a38"
+    },
+    "nodejs-payments": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/nodejs-payments/SKILL.md",
+      "computedHash": "8dac61ca15e803368c9dbaf591bda1007938fcb21ba29e7661ab7d3316b13a05"
+    },
+    "nodejs-scaffolding": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/nodejs-scaffolding/SKILL.md",
+      "computedHash": "0eabe9fc60af6546b1dd94d3a2c6147f3b3510760f0eeb9a4f0ec7751a8c7c36"
+    },
+    "plan-project": {
+      "source": "TechWithEmmaYT/TechwithEmma-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/plan-project/SKILL.md",
+      "computedHash": "28419b501c9e5c6574ebcdc885752298ad54b34df02a258ca4de7e2e3b0dcfe4"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "computedHash": "9b5a0bc8d34287ac67d8e59a84ce3beb0cc29d2bfc50159804600d79cfc2a549"
+    }
+  }
+}

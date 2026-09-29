@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "uniwind";
+
+/*
+ * Chowly design tokens. Values are locked in docs/design/mobile-design.md.
+ * Scale reminders: 4-point spacing (gutter p-5 = 20, section gap-7 = 28,
+ * control h-13 = 52), inputs rounded-input, cards rounded-card, sheets rounded-sheet.
+ * Dark values are derived from the same roles; only light is design-approved.
+ */
+/* Scales never change with the theme, so they live in @theme and generate utilities directly. */
+@theme {
+  --spacing: 4px;
+
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-sheet: 28px;
+  --radius-pill: 999px;
+
+  --text-hero: 56px;
+  --text-hero--line-height: 60px;
+  --text-display: 28px;
+  --text-display--line-height: 34px;
+  --text-title: 22px;
+  --text-title--line-height: 28px;
+  --text-section: 17px;
+  --text-section--line-height: 22px;
+  --text-body: 15px;
+  --text-body--line-height: 22px;
+  --text-label: 13px;
+  --text-label--line-height: 18px;
+  --text-caption: 11px;
+  --text-caption--line-height: 14px;
+
+  --font-sans: "Inter_400Regular";
+  --font-label: "Inter_500Medium";
+  --font-heading: "Inter_600SemiBold";
+  --font-title: "Inter_700Bold";
+}
+
+/* Colours are theme-aware, so they stay variant-scoped. */
+@layer theme {
+  :root {
+    @variant light {
+      --color-background: #ffffff;
+      --color-foreground: #102a2a;
+      --color-card: #ffffff;
+      --color-card-foreground: #102a2a;
+      --color-border: #e3ecea;
+      --color-input: #f3f6f5;
+      --color-muted: #f3f6f5;
+      --color-muted-foreground: #667575;
+      --color-subtle-foreground: #98a5a5;
+      --color-primary: #007f72;
+      --color-primary-foreground: #ffffff;
+      --color-primary-pressed: #009e89;
+      --color-brand: #00bfa5;
+      --color-header-from: #00c9b4;
+      --color-header-to: #00b39f;
+      --color-header-foreground: #ffffff;
+      --color-secondary: #e6faf7;
+      --color-secondary-foreground: #007f72;
+      --color-accent: #ff6b4a;
+      --color-accent-foreground: #ffffff;
+      --color-rating: #ff8a00;
+      --color-offer: #ffb020;
+      --color-destructive: #ef4444;
+      --color-success: #16a34a;
+      --color-warning: #f59e0b;
+    }
+
+    @variant dark {
+      --color-background: #0e1513;
+      --color-foreground: #f2f6f5;
+      --color-card: #16201e;
+      --color-card-foreground: #f2f6f5;
+      --color-border: #2a3634;
+      --color-input: #1b2523;
+      --color-muted: #1b2523;
+      --color-muted-foreground: #9aa8a6;
+      --color-subtle-foreground: #7e8c8a;
+      --color-primary: #00bfa5;
+      --color-primary-foreground: #ffffff;
+      --color-primary-pressed: #00a891;
+      --color-brand: #00bfa5;
+      --color-header-from: #00a895;
+      --color-header-to: #008c7c;
+      --color-header-foreground: #ffffff;
+      --color-secondary: #10322e;
+      --color-secondary-foreground: #7fe7d8;
+      --color-accent: #ff7a5c;
+      --color-accent-foreground: #2a0f07;
+      --color-rating: #ffa033;
+      --color-offer: #ffc24d;
+      --color-destructive: #f87171;
+      --color-success: #4ade80;
+      --color-warning: #fbbf24;
+    }
+  }
+}
